@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivDevice"
+        android:layout_width="86dp"
+        android:layout_height="34dp"
+        android:layout_margin="18dp" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_toRightOf="@+id/ivDevice"
+        android:text="Title"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/ivDevice"
+        android:layout_below="@+id/tvTitle"
+        android:text="Description"
+        android:textSize="12dp" />
+
+    <View
+        android:id="@+id/vNotificator"
+        android:background="@android:color/holo_red_dark"
+        android:layout_width="300dp"
+        android:layout_height="2px"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/tvDescription"/>
+
+
+</RelativeLayout>
